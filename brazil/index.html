@@ -1,0 +1,128 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Brazil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+  <div class="hero-left">
+    <h1>WELCOME TO BRAZIL</h1>
+    <p>Discover the beauty of Rio de Janeiro</p>
+  </div>
+  <div class="hero-right">
+    <button onclick="toggleSection('map')">🗺️ Map</button>
+    <button onclick="toggleSection('places')">📍 Places to Visit</button>
+    <button onclick="toggleSection('reviews')">⭐ Reviews</button>
+  </div>
+</header>
+
+<section id="map" class="content-section">
+  <h2>Map of Brazil</h2>
+  <!-- هنا نحط الكود اللي نسخناه -->
+  <iframe 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31656393.254779518!2d-51.316680000000005!3d-14.40952615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2zQnLDqXNpbA!5e0!3m2!1sfr!2sdz!4v1777395817505!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    width="100%" height="400" style="border:0;" 
+    allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
+
+<section id="places" class="content-section">
+  <h2>Best Places to Visit</h2>
+  <div class="places-gallery">
+    <div class="place">
+      <img src="image/Christ the Redeemer in Rio de Janeiro_ Brazil’s Most Iconic Statue.jpg" alt="Christ the Redeemer">
+      <p>Christ the Redeemer – Rio de Janeiro</p>
+    </div>
+    <div class="place">
+      <img src="image/Iguaçu Falls Cascading in Vintage Anime Beauty.jpg" alt="Iguazu Falls">
+      <p>Iguazu Falls – Paraná</p>
+    </div>
+    <div class="place">
+      <img src="image/Lençóis Maranhenses.jpg" alt="Lençóis Maranhenses">
+      <p>Lençóis Maranhenses – Maranhão</p>
+    </div>
+    <div class="place">
+      <img src="image/Affiche de voyage vintage Rio de Janeiro, Brésil _ les marches de Selarón et les favelas (téléchargement numérique).jpg" alt="Escadaria Selarón">
+      <p>Escadaria Selarón – Rio de Janeiro</p>
+    </div>
+    <div class="place">
+      <img src="image/Chapada Diamantina.jpg" alt="Chapada Diamantina">
+      <p>Chapada Diamantina – Bahia</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="content-section">
+  <h2>Traveler Reviews</h2>
+  <div class="review">
+    <p>"Brazil is amazing! The beaches in Rio are unforgettable."</p>
+    <span>- Sarah, UK</span>
+  </div>
+  <div class="review">
+    <p>"Iguazu Falls blew my mind. Nature at its best."</p>
+    <span>- Ahmed, Egypt</span>
+  </div>
+  <div class="review">
+    <p>"The food is delicious, especially Feijoada and Churrasco."</p>
+    <span>- Maria, Spain</span>
+  </div>
+</section>
+  <!-- Background Intro -->
+  <section class="intro">
+    <h2>A Day in Rio de Janeiro: Travel Guide</h2>
+    <p>Rio de Janeiro is a vibrant city full of culture, beautiful landscapes and exciting activities. 
+       This guide will show you what to do, what to eat, and how to enjoy a perfect day.</p>
+  </section>
+
+  <!-- Choose Your Time -->
+  <section class="choose-time">
+    <h2>Choose Your Time</h2>
+    <div class="time-options">
+      <div class="option">
+        <img src="image/Brazil Travel Poster – Rio de Janeiro Wall Art Print, Christ the Redeemer Brazil Vintage Style.jpg" alt="Morning">
+        
+        <a href="morning.html" class="btn">🌅 Morning</a>
+      </div>
+      <div class="option">
+        <img src="image/Affiche de voyage au Brésil, art mural Rio de Janeiro, impression du Christ Rédempteur, Rio vintage.jpg" alt="Afternoon">
+                <a href="afternoon.html" class="btn">🌇 afternoon</a>
+
+      </div>
+      <div class="option">
+        <img src="image/Rio de Janeiro, Brazil.jpg" alt="Night">
+                <a href="nigth.html" class="btn">🌃 Night</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact for More Info</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Travel Guide Brazil</p>
+    <p>*Ines, *Meriem, *Intissar, *Nermine </p>
+  </footer>
+</body>
+</html>
+
+<script>
+function toggleSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section.style.display === "block") {
+    section.style.display = "none"; // يخفي إذا كان ظاهر
+  } else {
+    section.style.display = "block"; // يظهر إذا كان مخفي
+  }
+}
+</script>

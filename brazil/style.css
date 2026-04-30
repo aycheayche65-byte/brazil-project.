@@ -1,0 +1,207 @@
+ body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('image/6014851271849872417.jpg') center/cover no-repeat fixed;
+
+}
+
+/* Hero Section */
+.hero {
+  background: #009688; /* لون بسيط */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* يخلي النص على اليسار والأزرار على اليمين */
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.hero-content p {
+  margin: 5px 0 0;
+  font-size: 1em;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-buttons button {
+  background: white;
+  color: #009688;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-buttons button:hover {
+  background: #e0f2f1;
+}
+/* Intro Section */
+.intro {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Choose Your Time */
+.choose-time {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.time-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.option {
+  
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.option img {
+  width: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.option button {
+  background: #009688;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option button:hover {
+  background: #00796b;
+}
+
+/* Contact Section */
+.content-section {
+  display: none; /* نخفي الأقسام */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact button {
+  background: #009688;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #00796b;
+}
+
+/* Footer */
+footer {
+  background: #009688;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+.hero-right button {
+  background: linear-gradient(135deg, #ff9800, #f44336); /* تدرج لوني */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 30px; /* يخلي الزر دائري */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* ظل */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-right button:hover {
+  transform: scale(1.05); /* يكبر شوية كي تدير عليه الماوس */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+.places-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.place {
+  width: 220px;
+  text-align: center;
+}
+
+.place img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.place img:hover {
+  transform: scale(1.05);
+}
+
+.place p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #009688;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #e48a02, #e11c0e);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
